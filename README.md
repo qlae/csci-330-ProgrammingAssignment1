@@ -66,14 +66,14 @@ The client should:
 	<li>If the length of the chunk read is 0, then go to step 9. No more chunks to read and send.</li>
 	<li>Repeat steps 8a - 8d</li>
 	</ol>
-9. Send the server the calculated hash value as a byte string.
+9. Send the server the calculated hash digest (**NOT hexdigest**) as a byte string.
 10. Receive a `b'success'` or `b'failed'` message.  
 11. If a `b'failed'` message is received, ```raise Exception('Transfer failed!')``` else `print('Transfer completed!')`
 12. Close the client socket. **(Implemented)**
 
 ## 3. Testing Your Implementation
 
-You can test your implementation by running the server and client on the same machine. Make sure to run the server first and then the client. **<span style="color:red">NOTE: as mentioned in section 1 above, it is important that you modify the filename, say by adding a *.temp* extension, to avoid overwriting the original file.</span>** This has already been done on the server's `with` statement. Such a filename change is only necessary when running both server and client on the same machine and using the same working directory. You do not have to modify the filename if you set the run configuration of the server to use a different working directory from that of the client.
+You can test your implementation by running the server and client on the same machine. Make sure to run the server first and then the client. **<span style="color:red">NOTE: as mentioned in section 1 above, it is important that you modify the filename, say by adding a *.temp* extension, to avoid overwriting the original file.</span>** This has already been done on the server's with statement. Such a filename change is only necessary when running both server and client on the same machine and using the same working directory. You do not have to modify the filename if you set the run configuration of the server to use a different working directory from that of the client.
 
 Your instructor will provide further information as to how to test both your client and server on a remote instance.
 

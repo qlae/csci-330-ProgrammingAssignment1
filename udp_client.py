@@ -21,7 +21,7 @@ def get_file_size(file_name: str) -> int:
 
 def send_file(filename: str):
     # get the file size in bytes
-    file_size = get_file_size(filename)
+    # TODO: section 2 step 2 in README.md file
 
     # convert the file size to an 8-byte byte string using big endian
     # TODO: section 2 step 3 in README.md file
