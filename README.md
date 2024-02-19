@@ -3,7 +3,7 @@
 
 ## Setup and Installation
 
-This mini-project should be forked.  Forking the repo will create a copy on your own  GitHub repo.  Once the repo is forked, you can clone **YOUR** repo using PyCharm.  Submission entails committing and pushing your changes to your repo. 
+This mini-project should be forked through <a href="https://classroom.github.com/a/wK-wgtb6">GitHub classroom</a>.  If you are reading this README.md, then you have already forked this Repo and set up the project on GitHub Classroom.  You can now clone **YOUR** repo using PyCharm.  Submission entails committing and pushing your changes to your repo. 
 
 ## Introduction
 
@@ -31,7 +31,7 @@ The server should:
 5. To upload the file, Create an SHA256 object to compute the sha256 hash of the received file
 6. Using the filename provided, open the file for writing using the with python statement. **NOTE: since you will be transferring a file over localhost to the same directory, it is important that you modify the filename, say by adding a *.temp* extension, to avoid overwriting the original file.** (Implemented)
 7. Inside the *with* statement, 
-	<ol type="a">
+	<ol style="list-style-type: lower-alpha;">
 	<li>Receive a chunk of data.</li>
 	<li>Write the data to the file.</li>
 	<li>Update the sha256 hash.</li>
@@ -54,10 +54,10 @@ The client should:
 6. Send the 8-byte file size concatenated with the encoded filename to the server.
 7. Wait for the server to send `b'go ahead'` message. If any other message is sent, `raise Exception('Bad server response - was not go ahead!')`
 8. Open the file for reading in binary mode using the *with* python statement.
-	<ol type="a">
+	<ol style="list-style-type: lower-alpha;">
 	<li>Read a chunk of data from the file.</li>
 	<li>If the length of the chunk > 0, then
-	<ol type="i">
+	<ol style="list-style-type: lower-roman;">
 	<li>Update the hash.</li>
 	<li>Send the chunk to the server.</li>
 	<li>Receive a 'received' acknowledgment from the server. If a message other than 'received' is received, then `raise Exception('Bad server response - was not received')`.</li>
