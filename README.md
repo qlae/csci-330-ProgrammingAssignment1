@@ -3,7 +3,7 @@
 
 ## Setup and Installation
 
-This mini-project should be forked through <a href="https://classroom.github.com/a/wK-wgtb6">GitHub classroom</a>.  If you are reading this README.md, then you have already forked this Repo and set up the project on GitHub Classroom.  You can now clone **YOUR** repo using PyCharm.  Submission entails committing and pushing your changes to your repo. 
+This programming assignment should be templated and then cloned.  You should clone your templated repo and not this repo. See section at end of this document on how to hand in this assignment. 
 
 ## Introduction
 
@@ -73,13 +73,15 @@ The client should:
 
 ## 3. Testing Your Implementation
 
-You can test your implementation by running the server and client on the same machine. Make sure to run the server first and then the client. **<span style="color:red">NOTE: as mentioned in section 1 above, it is important that you modify the filename, say by adding a *.temp* extension, to avoid overwriting the original file.</span>** This has already been done on the server's with statement. Such a filename change is only necessary when running both server and client on the same machine and using the same working directory. You do not have to modify the filename if you set the run configuration of the server to use a different working directory from that of the client.
+You can test your implementation by first implementing the client and running it against a correctly implemented server at **20.33.20.21:12000**. Once the client works you can test your server using your working client.   
+
+**<span style="color:red">NOTE: as mentioned in section 1 above, it is important that you modify the filename, say by adding a *.temp* extension, to avoid overwriting the original file.</span>** This has already been done on the server's `with` statement. Such a filename change is only necessary when running both server and client on the same machine and using the same working directory. You do not have to modify the filename if you set the run configuration of the server to use a different working directory from that of the client.
 
 Your instructor will provide further information as to how to test both your client and server on a remote instance.
 
 ## 4. Submitting This Work
 
-You are required to commit and push your code to your forked repo.
+You are required to submit this work using the CodeGrade link on Blackboard.
 
 
 ## Tips
