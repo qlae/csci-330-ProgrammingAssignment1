@@ -1,4 +1,4 @@
-# CSCI-320 Mini-Project: UDP File Transfer
+# CSCI-320 - UDP File Transfer
 
 
 ## Setup and Installation
