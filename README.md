@@ -47,7 +47,7 @@ The server should:
 The client should:
 
 1.	Obtain the name of the file to transfer from the command line using sys.argv. **(Implemented)**
-2. Obtain the size of the file in bytes by using the os.path module.(use `get_file_size()`)
+2. Obtain the size of the fileby using the os.path module (use `get_file_size()`).  The size of the file is the number of bytes the file occupies on disk.
 3. Convert the file size to an 8-byte string using big endian.
 4. Create a SHA256 object using the hashlib module, to calculate the sha256 hash of the file.
 5. Create a socket using the `socket` function. **(Implemented)**
@@ -73,7 +73,7 @@ The client should:
 
 ## 3. Testing Your Implementation
 
-You can test your implementation by first implementing the client and running it against a correctly implemented server at **20.33.20.21:12000**. Once the client works you can test your server using your working client.   
+You can test your implementation by first implementing the client and running it against a correctly implemented server with IP provided by your instructor on Blackboard and in the class Discord channel. Once the client works you can test your server using your working client.   
 
 **<span style="color:red">NOTE: as mentioned in section 1 above, it is important that you modify the filename, say by adding a *.temp* extension, to avoid overwriting the original file.</span>** This has already been done on the server's `with` statement. Such a filename change is only necessary when running both server and client on the same machine and using the same working directory. You do not have to modify the filename if you set the run configuration of the server to use a different working directory from that of the client.
 
